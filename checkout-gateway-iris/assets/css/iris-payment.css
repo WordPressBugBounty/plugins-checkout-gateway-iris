@@ -1,0 +1,15 @@
+.iris-payment-label {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.wc_payment_method.payment_method_iris_payments img {
+  height: 20px !important;
+  width: auto !important;
+  max-height: 20px !important;
+}
+
+.woocommerce .payment_methods .payment_method_iris_payments img{
+  max-height:24px; width:auto; vertical-align:middle;
+}
