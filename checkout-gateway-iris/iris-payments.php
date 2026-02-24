@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Checkout Gateway for IRIS
  * Description: Payment gateway for WooCommerce.
- * Version:     1.4
+ * Version:     1.5
  * Author:      vgdevsolutions
  * Author URI:  https://vgdevsolutions.gr/
  * Text Domain: checkout-gateway-iris
@@ -57,6 +57,15 @@ function irisgw_init_iris_payment_gateway() {
     }
 
     class WC_Gateway_Iris_Payments extends WC_Payment_Gateway {
+
+        /** Δηλωμένες ιδιότητες (PHP 8.2+ compatibility) */
+        public $instructions;
+        public $vat_number;
+        public $account_holder;
+        public $qr_code;
+        public $reference_text;
+        public $vat_label;
+        public $account_holder_label;
 
         /** Public για χρήση στα emails */
         public $completed_order_message;

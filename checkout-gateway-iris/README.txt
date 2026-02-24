@@ -2,9 +2,9 @@
 Contributors: vgdevsolutions
 Tags: woocommerce, iris, bank transfer, greek payments, qr code
 Requires at least: 5.2
-Tested up to: 6.8.3
+Tested up to: 6.9.1
 Requires PHP: 7.2
-Stable tag: 1.2
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,3 +77,6 @@ Visit [https://vgdevsolutions.gr](https://vgdevsolutions.gr) for support, featur
 
 = 1.4 =
 * Security: Patched a security issue reported by Patchstack
+
+= 1.5 =
+* Fixed PHP 8.2+ / 8.3 compatibility: Declared all custom class properties explicitly in WC_Gateway_Iris_Payments to resolve "Creation of dynamic property" deprecation warnings.
